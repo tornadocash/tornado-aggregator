@@ -1,0 +1,47 @@
+{
+  "name": "solidity-template",
+  "version": "1.0.0",
+  "description": "A template with all preferred configs",
+  "main": "index.js",
+  "scripts": {
+    "compile": "yarn truffle compile",
+    "test": "yarn truffle test",
+    "test:stacktrace": "yarn test --stacktrace",
+    "eslint": "eslint --ext .js --ignore-path .gitignore .",
+    "prettier:check": "prettier --check . --config .prettierrc",
+    "prettier:fix": "prettier --write . --config .prettierrc",
+    "lint": "yarn eslint && yarn prettier:check",
+    "deploy:mainnet": "truffle migrate --network mainnet",
+    "deploy:kovan": "truffle migrate --network kovan",
+    "deploy:dev": "truffle migrate --skip-dry-run --network development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peppersec/solidity-template.git"
+  },
+  "author": "peppersec.com <hello@peppersec.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peppersec/solidity-template/issues"
+  },
+  "homepage": "https://github.com/peppersec/solidity-template#readme",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "babel-eslint": "^10.1.0",
+    "bn-chai": "^1.0.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.54",
+    "solhint-plugin-prettier": "^0.0.4",
+    "truffle": "^5.1.29",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-plugin-verify": "^0.3.11",
+    "web3": "^1.2.11"
+  }
+}
