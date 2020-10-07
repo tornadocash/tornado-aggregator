@@ -1,4 +1,4 @@
-# Peppersec solidity template [![Build Status](https://github.com/peppersec/solidity-template/workflows/build/badge.svg)](https://github.com/peppersec/solidity-template/actions)
+# Tornado smart contract data aggregator [![Build Status](https://github.com/peppersec/solidity-template/workflows/build/badge.svg)](https://github.com/peppersec/solidity-template/actions)
 
 ## Dependencies
 

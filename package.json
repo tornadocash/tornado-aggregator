@@ -43,5 +43,10 @@
     "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.3.11",
     "web3": "^1.2.11"
+  },
+  "dependencies": {
+    "tornado-anonymity-mining": "git+https://github.com/tornadocash/tornado-anonymity-mining.git#1e1a85192be4881b51f77ae1bf3a8194a09a0605",
+    "torn-token": "git+https://github.com/tornadocash/torn-token.git#da424e05749ed06dc61a6a37587e7b35e42bc438",
+    "tornado-governance": "git+https://github.com/tornadocash/governance.git#f27663c39f5e5bf23455ffd44accf3ea42186372"
   }
 }
