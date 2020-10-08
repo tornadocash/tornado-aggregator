@@ -23,7 +23,7 @@ contract GovernanceAggregator {
     Governance governance,
     uint256 from,
     uint256 to
-  ) external view returns (Proposal[] memory proposals) {
+  ) public view returns (Proposal[] memory proposals) {
     uint256 proposalCount = governance.proposalCount();
     to = to == 0 ? proposalCount : to;
     proposals = new Proposal[](proposalCount);
@@ -56,11 +56,7 @@ contract GovernanceAggregator {
     }
   }
 
-  function getGovernanceBalances(Governance governance, address[] calldata accs)
-    external
-    view
-    returns (uint256[] memory amounts)
-  {
+  function getGovernanceBalances(Governance governance, address[] calldata accs) public view returns (uint256[] memory amounts) {
     amounts = new uint256[](accs.length);
     for (uint256 i = 0; i < accs.length; i++) {
       amounts[i] = governance.balances(accs[i]);
