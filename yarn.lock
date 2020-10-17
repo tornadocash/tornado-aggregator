@@ -4567,9 +4567,9 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#971b4cfc5dd7e2a3d1da8e42aa2dac29730ecf35":
+"torn-token@git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#971b4cfc5dd7e2a3d1da8e42aa2dac29730ecf35"
+  resolved "git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f"
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"
@@ -4577,9 +4577,9 @@ toidentifier@1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#da424e05749ed06dc61a6a37587e7b35e42bc438":
+"torn-token@git+https://github.com/tornadocash/torn-token.git#dd6f782486a86653e60824da51d3b77d194398a5":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#da424e05749ed06dc61a6a37587e7b35e42bc438"
+  resolved "git+https://github.com/tornadocash/torn-token.git#dd6f782486a86653e60824da51d3b77d194398a5"
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"
@@ -4599,13 +4599,13 @@ toidentifier@1.0.0:
     web3 "^1.2.11"
     websnark "git+https://github.com/tornadocash/websnark.git#86a526718cd6f6f5d31bdb1fe26a9ec8819f633e"
 
-"tornado-governance@git+https://github.com/tornadocash/governance.git#f27663c39f5e5bf23455ffd44accf3ea42186372":
+"tornado-governance@git+https://github.com/tornadocash/governance.git#4c37f7b306d58eadfdc5e000f3bee56b3727a1b2":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/governance.git#f27663c39f5e5bf23455ffd44accf3ea42186372"
+  resolved "git+https://github.com/tornadocash/governance.git#4c37f7b306d58eadfdc5e000f3bee56b3727a1b2"
   dependencies:
     "@openzeppelin/contracts" "^3.2.0-rc.0"
     "@openzeppelin/upgrades-core" "^1.0.1"
-    torn-token "git+https://github.com/tornadocash/torn-token.git#971b4cfc5dd7e2a3d1da8e42aa2dac29730ecf35"
+    torn-token "git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f"
 
 tough-cookie@~2.5.0:
   version "2.5.0"

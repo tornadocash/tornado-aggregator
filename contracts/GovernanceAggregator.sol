@@ -7,7 +7,6 @@ import "tornado-governance/contracts/Governance.sol";
 
 contract GovernanceAggregator {
   struct Proposal {
-    uint256 id;
     address proposer;
     address target;
     uint256 startTime;
@@ -30,7 +29,6 @@ contract GovernanceAggregator {
 
     for (from; from < to; from++) {
       (
-        uint256 id,
         address proposer,
         address target,
         uint256 startTime,
@@ -39,10 +37,9 @@ contract GovernanceAggregator {
         uint256 againstVotes,
         bool executed,
         bool extended
-      ) = governance.proposals(from + 1);
+      ) = governance.proposals(from);
 
       proposals[from] = Proposal({
-        id: id,
         proposer: proposer,
         target: target,
         startTime: startTime,
@@ -51,7 +48,7 @@ contract GovernanceAggregator {
         againstVotes: againstVotes,
         executed: executed,
         extended: extended,
-        state: governance.state(id)
+        state: governance.state(from)
       });
     }
   }
@@ -59,7 +56,24 @@ contract GovernanceAggregator {
   function getGovernanceBalances(Governance governance, address[] calldata accs) public view returns (uint256[] memory amounts) {
     amounts = new uint256[](accs.length);
     for (uint256 i = 0; i < accs.length; i++) {
-      amounts[i] = governance.balances(accs[i]);
+      amounts[i] = governance.lockedBalance(accs[i]);
     }
+  }
+
+  function getUserData(Governance governance, address account)
+    public
+    view
+    returns (
+      uint256 balance,
+      uint256 latestProposalId,
+      uint256 timelock,
+      address delegatee
+    )
+  {
+    // Core core = Core(address(governance));
+    balance = governance.lockedBalance(account);
+    latestProposalId = governance.latestProposalIds(account);
+    timelock = governance.canWithdrawAfter(account);
+    delegatee = governance.delegatedTo(account);
   }
 }

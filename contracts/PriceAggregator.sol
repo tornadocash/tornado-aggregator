@@ -2,7 +2,7 @@
 
 pragma solidity 0.6.12;
 
-import "./ENS.sol";
+import "torn-token/contracts/ENS.sol";
 
 interface OneSplit {
   function getExpectedReturn(
