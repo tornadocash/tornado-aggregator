@@ -18,16 +18,10 @@ contract GovernanceAggregator {
     Governance.ProposalState state;
   }
 
-  function getAllProposals(
-    Governance governance,
-    uint256 from,
-    uint256 to
-  ) public view returns (Proposal[] memory proposals) {
-    uint256 proposalCount = governance.proposalCount();
-    to = to == 0 ? proposalCount : to;
-    proposals = new Proposal[](proposalCount);
+  function getAllProposals(Governance governance) public view returns (Proposal[] memory proposals) {
+    proposals = new Proposal[](governance.proposalCount());
 
-    for (from; from < to; from++) {
+    for (uint256 i = 0; i < proposals.length; i++) {
       (
         address proposer,
         address target,
@@ -37,9 +31,9 @@ contract GovernanceAggregator {
         uint256 againstVotes,
         bool executed,
         bool extended
-      ) = governance.proposals(from);
+      ) = governance.proposals(i + 1);
 
-      proposals[from] = Proposal({
+      proposals[i] = Proposal({
         proposer: proposer,
         target: target,
         startTime: startTime,
@@ -48,7 +42,7 @@ contract GovernanceAggregator {
         againstVotes: againstVotes,
         executed: executed,
         extended: extended,
-        state: governance.state(from)
+        state: governance.state(i + 1)
       });
     }
   }
