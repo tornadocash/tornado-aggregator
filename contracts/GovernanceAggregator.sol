@@ -60,7 +60,7 @@ contract GovernanceAggregator {
     returns (
       uint256 balance,
       uint256 latestProposalId,
-      uint256 latestProposalIdState
+      uint256 latestProposalIdState,
       uint256 timelock,
       address delegatee
     )
@@ -68,8 +68,8 @@ contract GovernanceAggregator {
     // Core core = Core(address(governance));
     balance = governance.lockedBalance(account);
     latestProposalId = governance.latestProposalIds(account);
-    if(latestProposalId != 0) {
-      latestProposalIdState = governance.state(latestProposalId)
+    if (latestProposalId != 0) {
+      latestProposalIdState = uint256(governance.state(latestProposalId));
     }
     timelock = governance.canWithdrawAfter(account);
     delegatee = governance.delegatedTo(account);
