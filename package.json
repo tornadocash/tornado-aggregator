@@ -47,6 +47,6 @@
   "dependencies": {
     "tornado-anonymity-mining": "git+https://github.com/tornadocash/tornado-anonymity-mining.git#1e1a85192be4881b51f77ae1bf3a8194a09a0605",
     "tornado-governance": "git+https://github.com/tornadocash/governance.git#4c37f7b306d58eadfdc5e000f3bee56b3727a1b2",
-    "torn-token": "git+https://github.com/tornadocash/torn-token.git#dd6f782486a86653e60824da51d3b77d194398a5"
+    "torn-token": "git+https://github.com/tornadocash/torn-token.git#e119ff634fbe1b33b9643074bc2f6b08741c635f"
   }
 }

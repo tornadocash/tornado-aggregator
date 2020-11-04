@@ -4577,9 +4577,9 @@ toidentifier@1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#dd6f782486a86653e60824da51d3b77d194398a5":
+"torn-token@git+https://github.com/tornadocash/torn-token.git#e119ff634fbe1b33b9643074bc2f6b08741c635f":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#dd6f782486a86653e60824da51d3b77d194398a5"
+  resolved "git+https://github.com/tornadocash/torn-token.git#e119ff634fbe1b33b9643074bc2f6b08741c635f"
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"

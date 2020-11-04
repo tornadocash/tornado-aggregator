@@ -7,8 +7,9 @@ import "./GovernanceAggregator.sol";
 import "./PriceAggregator.sol";
 import "./SwapAggregator.sol";
 import "./MinerAggregator.sol";
+import "torn-token/contracts/ENS.sol";
 
-contract Aggregator is GovernanceAggregator, PriceAggregator, SwapAggregator, MinerAggregator {
+contract Aggregator is EnsResolve, GovernanceAggregator, PriceAggregator, SwapAggregator, MinerAggregator {
   function miningData(
     Miner miner,
     address[] calldata instances,
