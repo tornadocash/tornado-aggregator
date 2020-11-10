@@ -935,6 +935,16 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+"circomlib@git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4":
+  version "0.0.20"
+  resolved "git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4"
+  dependencies:
+    blake-hash "^1.1.0"
+    blake2b "^2.1.3"
+    snarkjs "git+https://github.com/tornadocash/snarkjs.git#869181cfaf7526fe8972073d31655493a04326d5"
+    typedarray-to-buffer "^3.1.5"
+    web3 "^1.2.11"
+
 "circomlib@git+https://github.com/tornadocash/circomlib.git#5beb6aee94923052faeecea40135d45b6ce6172c":
   version "0.0.20"
   resolved "git+https://github.com/tornadocash/circomlib.git#5beb6aee94923052faeecea40135d45b6ce6172c"
@@ -4567,9 +4577,9 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f":
+"torn-token@git+https://github.com/tornadocash/torn-token.git#a42f83aadeda88b9d8c364a0034d8ec6c7f8fb74":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f"
+  resolved "git+https://github.com/tornadocash/torn-token.git#a42f83aadeda88b9d8c364a0034d8ec6c7f8fb74"
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"
@@ -4577,9 +4587,9 @@ toidentifier@1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#e119ff634fbe1b33b9643074bc2f6b08741c635f":
+"torn-token@git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#e119ff634fbe1b33b9643074bc2f6b08741c635f"
+  resolved "git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f"
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"
@@ -4587,11 +4597,11 @@ toidentifier@1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
-"tornado-anonymity-mining@git+https://github.com/tornadocash/tornado-anonymity-mining.git#1e1a85192be4881b51f77ae1bf3a8194a09a0605":
+"tornado-anonymity-mining@git+https://github.com/tornadocash/tornado-anonymity-mining.git#b13228c20126f212ebbcc5a8493ce2105210739e":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/tornado-anonymity-mining.git#1e1a85192be4881b51f77ae1bf3a8194a09a0605"
+  resolved "git+https://github.com/tornadocash/tornado-anonymity-mining.git#b13228c20126f212ebbcc5a8493ce2105210739e"
   dependencies:
-    circomlib "git+https://github.com/tornadocash/circomlib.git#5beb6aee94923052faeecea40135d45b6ce6172c"
+    circomlib "git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4"
     decimal.js "^10.2.0"
     eth-sig-util "^2.5.3"
     fixed-merkle-tree "^0.3.4"
@@ -4599,13 +4609,13 @@ toidentifier@1.0.0:
     web3 "^1.2.11"
     websnark "git+https://github.com/tornadocash/websnark.git#86a526718cd6f6f5d31bdb1fe26a9ec8819f633e"
 
-"tornado-governance@git+https://github.com/tornadocash/governance.git#4c37f7b306d58eadfdc5e000f3bee56b3727a1b2":
+"tornado-governance@git+https://github.com/tornadocash/governance.git#8e931b1c06505de1e18ef5f4e4af6830f1367cbf":
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/governance.git#4c37f7b306d58eadfdc5e000f3bee56b3727a1b2"
+  resolved "git+https://github.com/tornadocash/governance.git#8e931b1c06505de1e18ef5f4e4af6830f1367cbf"
   dependencies:
     "@openzeppelin/contracts" "^3.2.0-rc.0"
     "@openzeppelin/upgrades-core" "^1.0.1"
-    torn-token "git+https://github.com/tornadocash/torn-token.git#a388d4f79e1a323f5bd04baf72d3b58298a0fb5f"
+    torn-token "git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f"
 
 tough-cookie@~2.5.0:
   version "2.5.0"
