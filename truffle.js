@@ -39,6 +39,15 @@ module.exports = {
       // timeoutBlocks: 200,
       skipDryRun: true,
     },
+    goerli: {
+      provider: () => new HDWalletProvider(PRIVATE_KEY, `https://goerli.infura.io/v3/${INFURA_TOKEN}`),
+      network_id: 5,
+      gas: 6000000,
+      gasPrice: utils.toWei('1', 'gwei'),
+      // confirmations: 0,
+      // timeoutBlocks: 200,
+      skipDryRun: true,
+    },
     coverage: {
       host: 'localhost',
       network_id: '*',

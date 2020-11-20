@@ -13,6 +13,7 @@
     "lint": "yarn eslint && yarn prettier:check",
     "deploy:mainnet": "truffle migrate --network mainnet",
     "deploy:kovan": "truffle migrate --network kovan",
+    "deploy:goerli": "truffle migrate --network goerli",
     "deploy:dev": "truffle migrate --skip-dry-run --network development"
   },
   "repository": {
@@ -45,8 +46,8 @@
     "web3": "^1.2.11"
   },
   "dependencies": {
-    "tornado-anonymity-mining": "git+https://github.com/tornadocash/tornado-anonymity-mining.git#b13228c20126f212ebbcc5a8493ce2105210739e",
-    "tornado-governance": "git+https://github.com/tornadocash/governance.git#8e931b1c06505de1e18ef5f4e4af6830f1367cbf",
-    "torn-token": "git+https://github.com/tornadocash/torn-token.git#a42f83aadeda88b9d8c364a0034d8ec6c7f8fb74"
+    "tornado-anonymity-mining": "git+https://github.com/tornadocash/tornado-anonymity-mining.git#5329de97aa9615ae3bd0e0d2d8ded06d6692cb7c",
+    "tornado-governance": "git+https://github.com/tornadocash/governance.git#aa010a0e0cbe8578e7037a21ee580c10de967449",
+    "torn-token": "git+https://github.com/tornadocash/torn-token.git#dc0e3416001401bc59ed32d8e9f02b04be0a8631"
   }
 }
