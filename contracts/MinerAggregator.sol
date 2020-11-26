@@ -12,4 +12,11 @@ contract MinerAggregator {
       _rates[i] = miner.rates(instances[i]);
     }
   }
+
+  function areClaimedNotes(Miner miner, bytes32[] calldata _rewardNullifiers) external view returns (bool[] memory result) {
+    result = new bool[](_rewardNullifiers.length);
+    for (uint256 i = 0; i < _rewardNullifiers.length; i++) {
+      result[i] = miner.rewardNullifiers(_rewardNullifiers[i]);
+    }
+  }
 }
