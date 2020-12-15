@@ -4577,9 +4577,10 @@ toidentifier@1.0.0:
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f":
+torn-token@^1.0.0:
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f"
+  resolved "https://registry.yarnpkg.com/torn-token/-/torn-token-1.0.0.tgz#73e47025646c3e07ab733afbf7aa53b6ab9cad55"
+  integrity sha512-BRzt3fy4211jCb64cWyOb5/NMGt9M9EV2ZFnGQYMubKrVkszoYm97Nex+EBa0mvV2KfXzCmJ6tehoDgOFAPGug==
   dependencies:
     "@openzeppelin/contracts" "^3.1.0"
     dotenv "^8.2.0"
@@ -4587,19 +4588,10 @@ toidentifier@1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
-"torn-token@git+https://github.com/tornadocash/torn-token.git#dc0e3416001401bc59ed32d8e9f02b04be0a8631":
+tornado-anonymity-mining@^1.0.0:
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/torn-token.git#dc0e3416001401bc59ed32d8e9f02b04be0a8631"
-  dependencies:
-    "@openzeppelin/contracts" "^3.1.0"
-    dotenv "^8.2.0"
-    eth-sig-util "^2.5.3"
-    ethereumjs-util "^7.0.3"
-    web3 "^1.2.11"
-
-"tornado-anonymity-mining@git+https://github.com/tornadocash/tornado-anonymity-mining.git#5329de97aa9615ae3bd0e0d2d8ded06d6692cb7c":
-  version "1.0.0"
-  resolved "git+https://github.com/tornadocash/tornado-anonymity-mining.git#5329de97aa9615ae3bd0e0d2d8ded06d6692cb7c"
+  resolved "https://registry.yarnpkg.com/tornado-anonymity-mining/-/tornado-anonymity-mining-1.0.0.tgz#179485e97ec83665ffce72f0813168bc513e26e3"
+  integrity sha512-pPAXeCtkcxxWrn/25wwVwNvvef8oRfeqRY7U63ChPpTphehuZgOtyd5hscXei2G5ASs9u7vGv9sD0FL4LCaLoQ==
   dependencies:
     circomlib "git+https://github.com/tornadocash/circomlib.git#3b492f9801573eebcfe1b6c584afe8a3beecf2b4"
     decimal.js "^10.2.0"
@@ -4609,13 +4601,14 @@ toidentifier@1.0.0:
     web3 "^1.2.11"
     websnark "git+https://github.com/tornadocash/websnark.git#86a526718cd6f6f5d31bdb1fe26a9ec8819f633e"
 
-"tornado-governance@git+https://github.com/tornadocash/governance.git#aa010a0e0cbe8578e7037a21ee580c10de967449":
+tornado-governance@v1.0.0:
   version "1.0.0"
-  resolved "git+https://github.com/tornadocash/governance.git#aa010a0e0cbe8578e7037a21ee580c10de967449"
+  resolved "https://registry.yarnpkg.com/tornado-governance/-/tornado-governance-1.0.0.tgz#eb3632a9a8a2b480f69e26a6e6b91a606fbbc334"
+  integrity sha512-4WPkdOgZGoR8aWYAiaC4c/NgtiEU8XwN6xpyQMo0GcoVjmJRNlZBbGY7WAqMX0Yvohc1p4JPZOyZaEEBFaVodA==
   dependencies:
     "@openzeppelin/contracts" "^3.2.0-rc.0"
     "@openzeppelin/upgrades-core" "^1.0.1"
-    torn-token "git+https://github.com/tornadocash/torn-token.git#d7b86c01538cd26afae73885f66269a98c02aa3f"
+    torn-token "^1.0.0"
 
 tough-cookie@~2.5.0:
   version "2.5.0"

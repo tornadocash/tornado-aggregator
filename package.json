@@ -1,5 +1,5 @@
 {
-  "name": "solidity-template",
+  "name": "tornado-aggregator",
   "version": "1.0.0",
   "description": "A template with all preferred configs",
   "main": "index.js",
@@ -46,8 +46,8 @@
     "web3": "^1.2.11"
   },
   "dependencies": {
-    "tornado-anonymity-mining": "git+https://github.com/tornadocash/tornado-anonymity-mining.git#5329de97aa9615ae3bd0e0d2d8ded06d6692cb7c",
-    "tornado-governance": "git+https://github.com/tornadocash/governance.git#aa010a0e0cbe8578e7037a21ee580c10de967449",
-    "torn-token": "git+https://github.com/tornadocash/torn-token.git#dc0e3416001401bc59ed32d8e9f02b04be0a8631"
+    "tornado-anonymity-mining": "^1.0.0",
+    "tornado-governance": "v1.0.0",
+    "torn-token": "^1.0.0"
   }
 }
