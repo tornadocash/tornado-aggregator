@@ -15,13 +15,20 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
     "comma-dangle": ["error", "always-multiline"],
     "require-await": "error",
-    "prettier/prettier": ["error", { "printWidth": 110 }]
+    "prettier/prettier": ["error", { "printWidth": 110 }],
+    "template-curly-spacing": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": ["TemplateLiteral"]
+      }
+    ]
   }
 }
