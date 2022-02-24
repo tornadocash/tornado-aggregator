@@ -8891,6 +8891,16 @@ torn-token@^1.0.0:
     ethereumjs-util "^7.0.3"
     web3 "^1.2.11"
 
+torn-token@^1.0.4:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/torn-token/-/torn-token-1.0.6.tgz#66cde5f85b611033918c807b4a8d9d4e5bb3fcfc"
+  integrity sha512-ilCS7fN+JM2O8l1Iw5cEWXyiQQg8GxEeYYvqALJcn5cO6qSpD+xJb3Dji4EHXa1Yu1OBd/19ktWNvUkWNvuAaQ==
+  dependencies:
+    "@openzeppelin/contracts" "^3.1.0"
+    eth-sig-util "^2.5.3"
+    ethereumjs-util "^7.0.3"
+    web3 "^1.2.11"
+
 tornado-anonymity-mining@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/tornado-anonymity-mining/-/tornado-anonymity-mining-1.0.0.tgz#179485e97ec83665ffce72f0813168bc513e26e3"
@@ -8904,7 +8914,7 @@ tornado-anonymity-mining@^1.0.0:
     web3 "^1.2.11"
     websnark "git+https://github.com/tornadocash/websnark.git#86a526718cd6f6f5d31bdb1fe26a9ec8819f633e"
 
-tornado-governance@v1.0.0:
+tornado-governance@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/tornado-governance/-/tornado-governance-1.0.0.tgz#eb3632a9a8a2b480f69e26a6e6b91a606fbbc334"
   integrity sha512-4WPkdOgZGoR8aWYAiaC4c/NgtiEU8XwN6xpyQMo0GcoVjmJRNlZBbGY7WAqMX0Yvohc1p4JPZOyZaEEBFaVodA==

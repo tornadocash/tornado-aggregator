@@ -45,6 +45,6 @@
   "dependencies": {
     "tornado-anonymity-mining": "^1.0.0",
     "tornado-governance": "v1.0.0",
-    "torn-token": "^1.0.0"
+    "torn-token": "^1.0.4"
   }
 }

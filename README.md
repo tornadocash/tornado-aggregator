@@ -1,4 +1,4 @@
-# Tornado smart contract data aggregator 
+# Tornado smart contract data aggregator
 
 [![Build Status](https://github.com/tornadocash/tornado-aggregator/workflows/build/badge.svg)](https://github.com/tornadocash/tornado-aggregator/actions)
 
