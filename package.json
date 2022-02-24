@@ -1,6 +1,7 @@
 {
   "name": "tornado-aggregator",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "description": "An aggregator for Tornado",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --ext .js --ignore-path .gitignore .",
@@ -43,8 +44,7 @@
     "solidity-coverage": "^0.7.17"
   },
   "dependencies": {
-    "tornado-anonymity-mining": "^1.0.0",
-    "tornado-governance": "v1.0.0",
-    "torn-token": "^1.0.4"
+    "tornado-governance": "2.0.0",
+    "torn-token": "^1.0.6"
   }
 }

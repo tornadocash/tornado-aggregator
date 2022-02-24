@@ -3,7 +3,7 @@
 pragma solidity ^0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "tornado-governance/contracts/Governance.sol";
+import "tornado-governance/contracts/v1/Governance.sol";
 
 contract GovernanceAggregator {
   struct Proposal {
