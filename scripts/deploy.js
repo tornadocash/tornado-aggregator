@@ -1,5 +1,4 @@
 const { ethers } = require('hardhat')
-const config = require('../config')
 
 async function main() {
   const [deployer] = await ethers.getSigners()
@@ -11,7 +10,19 @@ async function main() {
   const AggregatorFactory = await ethers.getContractFactory('Aggregator')
   const aggregator = await AggregatorFactory.deploy()
 
-  console.log('Aggregator address:', aggregator.address)
+  console.log(' address:', aggregator.address)
+
+  console.log('Delay before verification...')
+  await new Promise((r) => setTimeout(r, 60000))
+  
+  try {
+    await hre.run('verify:verify', {
+      address: aggregator.address,
+      constructorArguments: [],
+    })
+  } catch (err) {
+    console.log(`Verification of aggregator failed:`, err.message)
+  }
 }
 
 main()

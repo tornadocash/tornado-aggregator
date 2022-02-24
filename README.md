@@ -17,8 +17,8 @@ $ yarn test
 
 ## Deploying
 
-Deploy to Kovan:
+Deploy Aggregator:
 
-```bash
-$ yarn deploy:kovan
+```shell
+    yarn hardhat run scripts/deploy.js --network mainnet
 ```
