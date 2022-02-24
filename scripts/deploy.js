@@ -1,4 +1,5 @@
-const { ethers } = require('hardhat')
+const hre = require('hardhat')
+const { ethers } = hre
 
 async function main() {
   const [deployer] = await ethers.getSigners()
@@ -14,14 +15,14 @@ async function main() {
 
   console.log('Delay before verification...')
   await new Promise((r) => setTimeout(r, 60000))
-  
+
   try {
     await hre.run('verify:verify', {
       address: aggregator.address,
       constructorArguments: [],
     })
   } catch (err) {
-    console.log(`Verification of aggregator failed:`, err.message)
+    console.log('Verification of aggregator failed:', err.message)
   }
 }
 
