@@ -1,4 +1,8 @@
 .vscode
 .idea
+cache
+artifacts
 build
-scripts
+dist
+coverage
+coverage.json
